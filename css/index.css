@@ -1135,7 +1135,7 @@ footer .part1{
         .page1{
             flex-direction: column;
             padding: 3vw;
-            margin-top: 50vw;
+            margin-top: 50%;
             margin-bottom: 0;
         }
         .page1 .left-col{
@@ -1144,7 +1144,7 @@ footer .part1{
             
         }
         .page1 .right-col{
-            display: none;
+            
 
         }
         .btn{
