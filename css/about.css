@@ -555,7 +555,10 @@ footer .part1{
         display: block;
         font-size: 30px;
         margin-top: 4vw;
-        
+        position:absolute;
+        top:20px;
+        right: 25px;
+      
       
     }
      .navbar-container ul{
@@ -592,7 +595,7 @@ footer .part1{
     }
     .page1_cont img{
         height: 250px;
-        width: 250px;
+        width: 100%;
     }
     .abt_cont{
         padding: 2vw;
@@ -613,15 +616,17 @@ footer .part1{
         font-size: 35px;
      }
      .page2 img{
-        height: 100%;
-        margin-top: 30px;
+        height: 300px;
+        width: 100%;
+        margin-top: 50px;
      }
      /* ---------------------------page3----------------------------- */
      .page3{
         padding: 10px;
+        margin-top: 0;
      }
      .page3 h1{
-        font-size: 35px;
+        font-size: 40px;
      }
     .head_profile{
         display: grid;

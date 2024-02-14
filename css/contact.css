@@ -382,7 +382,9 @@ footer .part1{
         display: block;
         font-size: 30px;
         margin-top: 4vw;
-        
+        position:absolute;
+        top:20px;
+        right: 25px;
       
     }
      .navbar-container ul{
@@ -415,18 +417,27 @@ footer .part1{
     .form_container h2{
         font-size: 40px;
     }
+    .form_container{
+        min-height: 100vh;
+    }
+    .form_container h2{
+        margin-top: 40px;
+    }
     .contact_form{
         margin: auto;
+        height: 100%;
         width: 90%;
         justify-content: center;
     }
+    
     .contact_form form{
-        min-height: 110vh;
+        min-height: 100%;
+        margin-top: 50px;
     }
     .contact_form form input{
         width: 300px;
         padding: 20px;
-        margin-top: 20px;
+        margin-top: 15px;
     }
     .contact_form form select{
         width: 300px;
