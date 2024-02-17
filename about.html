@@ -11,6 +11,7 @@
     />
   </head>
   <body>
+    <!-- <div class="cursor"></div> -->
     <div class="container">
       <header>
         <nav class="navbar-container">
@@ -35,12 +36,7 @@
       </header>
       <div class="page1">
         <div class="page1_cont">
-          <img
-            src="./Assets/Adobe_Express_20240115_1717320_1.png"
-            height="300px"
-            width="300px"
-            alt=""
-          />
+          <img src="./Assets/Adobe_Express_20240115_1717320_1.png" alt="" />
           <div class="abt_cont">
             <h2>About Us</h2>
             <p>
@@ -182,15 +178,18 @@
         </div>
       </div>
     </footer>
-    <script>
-      var sidemenu = document.getElementById("sidemenu");
-
-      function openmenu() {
-        sidemenu.style.top = "0";
-      }
-      function closemenu() {
-        sidemenu.style.top = "-300px";
-      }
-    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/about.js"></script>
   </body>
 </html>
