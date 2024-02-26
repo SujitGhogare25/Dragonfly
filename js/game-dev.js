@@ -215,8 +215,8 @@ function loadingAnimationFooter(){
      gsap.registerPlugin(ScrollTrigger);
      gsap.from("footer",{
         x:-1100,
-        delay:0.2,
-        duration:0.2,
+        delay:0.4,
+        duration:0.4,
         scrollTrigger:{
             trigger:"footer",
             

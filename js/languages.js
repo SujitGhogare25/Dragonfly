@@ -9,6 +9,12 @@ function openmenu(){
 function closemenu(){
     sidemenu.style.top = "-300px"
 }
+
+var iframe = document.querySelector("iframe");
+function googleform(){
+   iframe.style.display = "block" 
+}
+
 // -----------------------------navbar------------------------------
 //   
 // ---------------------------Page1-------------------------
@@ -215,8 +221,8 @@ function loadingAnimationFooter(){
      gsap.registerPlugin(ScrollTrigger);
      gsap.from("footer",{
         x:-1100,
-        delay:0.2,
-        duration:0.2,
+        delay:0.4,
+        duration:0.4,
         scrollTrigger:{
             trigger:"footer",
             
