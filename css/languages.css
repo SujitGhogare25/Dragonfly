@@ -119,8 +119,9 @@
 }
 .btn iframe{
     display: none;
-    height: 300px;
-    width: 500px;
+    margin-top: 12px;
+    height: 250px;
+    width: 400px;
 }
 .btn .get_started-btn{
     padding: 1vw;
