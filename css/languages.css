@@ -119,9 +119,10 @@
 }
 .btn iframe{
     display: none;
-    margin-top: 12px;
+    margin-top: 18px;
     height: 250px;
     width: 400px;
+    margin-bottom: 20px;
 }
 .btn .get_started-btn{
     padding: 1vw;
@@ -715,6 +716,7 @@ footer .part1{
            .btn iframe{
             height: 400px;
             width: 100%;
+            
            }
            /* --------------------------Purpose and outlook---------------------------- */
            .head-disc{
