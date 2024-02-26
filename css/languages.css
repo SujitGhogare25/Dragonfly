@@ -117,11 +117,11 @@
 .btn{
     margin-top: 30px;
 }
-.btn iframe{
+ iframe{
     display: none;
     margin-top: 18px;
-    height: 250px;
-    width: 400px;
+    height: 400px;
+    width:100%;
     margin-bottom: 20px;
 }
 .btn .get_started-btn{
@@ -713,8 +713,8 @@ footer .part1{
                flex-direction: column;
                gap: 10px;
            }
-           .btn iframe{
-            height: 400px;
+             .container iframe{
+            height: 600px;
             width: 100%;
             
            }
