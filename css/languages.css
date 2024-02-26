@@ -712,6 +712,10 @@ footer .part1{
                flex-direction: column;
                gap: 10px;
            }
+           .btn iframe{
+            height: 400px;
+            width: 100%;
+           }
            /* --------------------------Purpose and outlook---------------------------- */
            .head-disc{
                margin-top: 0;
