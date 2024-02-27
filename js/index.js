@@ -87,8 +87,8 @@ function lodaingAnimationCommunity(){
     gsap.from(".page2",{
         y:100,
         opacity:0,
-        delay:0,
-        duration:0.8,
+        delay:0.2,
+        duration:0.4,
         scrollTrigger:{
             trigger:".page2",
            
@@ -97,8 +97,8 @@ function lodaingAnimationCommunity(){
     gsap.from(".page2 .card1",{
         x:-100,
         opacity:0,
-        delay:0.6,
-        duration:0.8,
+        delay:0.2,
+        duration:0.4,
         scrollTrigger:{
             trigger:".page2 .card1",
             
@@ -107,8 +107,8 @@ function lodaingAnimationCommunity(){
     gsap.from(".page2 .card2",{
         x:100,
         opacity:0,
-        delay:0.6,
-        duration:0.8,
+        delay:0.2,
+        duration:0.4,
         scrollTrigger:{
             trigger:".page2 .card1",
            
@@ -117,8 +117,8 @@ function lodaingAnimationCommunity(){
     gsap.from(".page2 .card3",{
         x:-100,
         opacity:0,
-        delay:0.6,
-        duration:0.8,
+        delay:0.2,
+        duration:0.4,
         scrollTrigger:{
             trigger:".page2 .card3",
            
@@ -128,7 +128,7 @@ function lodaingAnimationCommunity(){
         x:100,
         opacity:0,
         delay:0,
-        duration:0.8,
+        duration:0.4,
         scrollTrigger:{
             trigger:".page2 .card4",
             
@@ -138,7 +138,7 @@ function lodaingAnimationCommunity(){
         x:-100,
         opacity:0,
         delay:0,
-        duration:0.8,
+        duration:0.4,
         scrollTrigger:{
             trigger:".page2 .card5",
            
@@ -147,8 +147,8 @@ function lodaingAnimationCommunity(){
     gsap.from(".page2 .card6",{
         x:100,
         opacity:0,
-        delay:0.6,
-        duration:0.8,
+        delay:0.2,
+        duration:0.4,
         scrollTrigger:{
             trigger:".page2 .card6",
           
@@ -162,7 +162,7 @@ function lodaingAnimationJoinComMunity(){
     gsap.from(".join-community-container h2 , .join-community-container p, .join-community-container ul, .join-community-container button",{
         y:100,
         opacity:0,
-        delay:0.4,
+        delay:0.2,
         duration:0.3,
         scrollTrigger:{
             trigger:".join-community-container h2",
@@ -180,8 +180,8 @@ lodaingAnimationJoinComMunity()
     gsap.from(".about_us h2",{
         y:100,
         opacity:0,
-        delay:0.4,
-        duration:0.6,
+        delay:0.2,
+        duration:0.4,
         scrollTrigger:{
             trigger:".about_us h2",
             
@@ -190,8 +190,8 @@ lodaingAnimationJoinComMunity()
     gsap.from(".about_us h4",{
         y:100,
         opacity:0,
-        delay:0.4,
-        duration:0.6,
+        delay:0.2,
+        duration:0.4,
         scrollTrigger:{
             trigger:".about_us h4",
             
@@ -201,8 +201,8 @@ lodaingAnimationJoinComMunity()
     gsap.from(".about_us p",{
         y:100,
         opacity:0,
-        delay:0.4,
-        duration:0.6,
+        delay:0.2,
+        duration:0.4,
         scrollTrigger:{
             trigger:".about_us p",
             
@@ -215,8 +215,8 @@ function loadingAnimationFooter(){
      gsap.registerPlugin(ScrollTrigger);
      gsap.from("footer",{
         x:-1100,
-        delay:0.2,
-        duration:0.2,
+        delay:0.1,
+        duration:0.1,
         scrollTrigger:{
             trigger:"footer",
             

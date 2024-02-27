@@ -9,25 +9,7 @@ function closemenu() {
 }
 
 
-// document.addEventListener("mousemove",function(dets){
-//     gsap.to(".cursor",{
-       
-//         left:dets.x,
-//         top:dets.y
-//     })
-// })
-// document.querySelector(".page1").addEventListener("mouseenter",function(){
-//     gsap.to("#cursor",{
-//         transform: "translate(-50%,-50%) scale(1)",
-       
-//     })
-// })
-// document.querySelector(".page1").addEventListener("mouseleave",function(){
-//     gsap.to("#cursor",{
-//         transform: "translate(-50%,-50%) scale(0)",
-       
-//     })
-// })
+
 /*----------------------page1-------------------------- */
 function loadingAnimationPage1(){
   gsap.from(".page1  .page1_cont  img",{

@@ -9,6 +9,10 @@ function openmenu(){
 function closemenu(){
     sidemenu.style.top = "-300px"
 }
+var iframe = document.querySelector("iframe");
+function googleform(){
+   iframe.style.display = "block" 
+}
 // -----------------------------navbar------------------------------
 //   
 // ---------------------------Page1-------------------------

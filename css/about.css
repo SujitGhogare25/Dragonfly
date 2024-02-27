@@ -588,6 +588,7 @@ footer .part1{
         padding-left: 4vw;
         position: fixed;
         top: -300px;
+        left:0;
         gap: 10px;
         height: 300px;
         width: 100%;
