@@ -86,13 +86,6 @@
     color: white;
     
 }
-
-/* -------------active-home-link------------ */
-/* #active{
-    background: linear-gradient(to right, purple, orange);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
 /* -------------Open-close-menu------------- */
 .navbar-container  .fa-solid{
     display: none;
@@ -364,91 +357,8 @@ footer .part1{
        flex-basis: 45%;
    }
    
-   /* ----------------purpose and outlook--------------- */
-   .head-disc{
-       padding: 1vw;
-   }
-   .head-disc h1{
-       margin: 0.8vw;
-   }
-   .head-disc p{
-       padding: 1vw;
-   }
-   .head-disc h3{
-       margin: 1vw;
-   }
-   .head-disc-p2 .card{
-       height: 240px;
-   }
-   /* -------------------Page2----------------- */
-   .card1{
-       height: 300px;
-   }
-   .card1 h3{
-       margin-top: 0.8vw;
-       font-size: 2vw;
-   }
-   .card1:hover{
-       height: 300px;
-   } 
-   .card2{
-       height: 300px;
-   }
-   .card2 h3{
-       margin-top: 0.8vw;
-       font-size: 2vw;
-   }
-   .card2:hover{
-       height: 300px;
-   }
-   .card3{
-       height: 300px;
-   }
-   .card3 h3{
-       margin-top: 0.8vw;
-       font-size: 2vw;
-   }
-   .card3:hover{
-       height: 300px;
-   }
-   .card4{
-       height: 300px;
-   }
-   
-   .card4 h3{
-       margin-top: 0.8vw;
-       font-size: 2vw;
-   }
-   .card4:hover{
-       height: 300px;
-   }
-   .card5{
-       height: 300px;
-   }
-   .card5 h3{
-       margin-top: 0.8vw;
-       font-size: 2vw;
-   }
-   .card5:hover{
-       height: 300px;
-   }
-   .card6{
-       height: 300px;
-   }
-   .card6 h3{
-       margin-top: 0.8vw;
-       font-size: 2vw;
-   }
-   .card6:hover{
-       height: 300px;
-   }
-   /* ----------------------About Us------------------ */
-   .about_us{
-       min-height: 80vh;
-   }
-   .about_us button{
-       margin-top: 8vw;
-   }
+
+ 
    
    }
    /* ------------------For 4K Screen----------------------- */
@@ -493,125 +403,7 @@ footer .part1{
       .btn .contact_us-btn{
        width: 150px;
       }
-      /* ---------------------------Purpose and outlook----------------------- */
-       
-       .head-disc h1{
-           margin: 0;
-           font-size: 6vw;
-       }
-       .head-disc p{
-           font-size: 2vw;
-       }
-       .head-disc h3{
-           font-size: 3vw;
-       }
-      /* --------------------------Part2------------------ */
-      .head-disc-p2{
-       height: 800px;
-       }
-       .head-disc-p2 .card{
-           height: 300px;
-           width: 300px;
-       }
-       .head-disc-p2 .card img{
-           height: 120px;
-           width: 120px;
-       }
-       .head-disc-p2 .card p{
-           font-size: 30px;
-       }
-       /* ------------------------------Communities Page------------------- */
-   
-       .page2 .abt_communities{
-           font-size: 2vw;
-           margin-top: 1vw;
-       }
-       .card1{
-           height: 450px;
-       }
-       .card1 p{
-           font-size: 1.5vw;
-       }
-       .card1:hover{
-           height: 450px;
-       }
-       .card2{
-           height: 450px;
-       }
-       .card2 p{
-           font-size: 1.5vw;
-       }
-       .card2:hover{
-           height: 450px;
-       }
-       .card3{
-           height: 450px;
-       }
-       .card3 p{
-           font-size: 10px;
-       }
-       .card3:hover{
-           height: 450px;
-       }
-       .card4{
-           height: 450px;
-       }
-       .card4 p{
-           font-size: 10px;
-       }
-       .card4:hover{
-           height: 450px;
-       }
-       .card5{
-           height: 400px;
-       }
-       .card5 p{
-           font-size: 1.5vw;
-       }
-       .card5:hover{
-           height: 400px;
-       }
-       .card6{
-           height: 450px;
-       }
-       .card6 p{
-           font-size: 1.5vw;
-       }
-       .card6:hover{
-           height: 450px;
-       }
-       /* ----------------------------Join Community----------------------- */
-       .join-community-container{
-           height: 500px;
-           margin-bottom: 3vw;
-       }
-       .join-community-container h2{
-           font-size: 4vw;
-       }
-       .join-community-container p{
-           font-size: 2vw;
-       }
-       .join-community-container ul li{
-           font-size: 1.5vw;
-       }
-       .join-community-container .join-btn{
-           padding: 1.5vw;
-           width: 160px;
-       }
-       .join-community-container .join-btn a{
-           font-size: 2vw;
-       }
-       /* ------------------------About us------------------ */
-       .about_us {
-           margin-bottom: 2vw;
-       }
-       .about_us button{
-           padding: 2vw;
-   
-       }
-       .about_us button a{
-           font-size: 22px;
-       }
+
        /* --------------------Footer-------------- */
        footer{
            min-height: 400px;
@@ -652,66 +444,76 @@ footer .part1{
        } 
        /* ----------------------------------Mobile-Devices---------------------------- */
        @media only screen and (max-width:600px){
-           .navbar-container{
-               width: 100%;
-               min-height: 80px;
-               display:flex;
-               flex-direction: column;
-               align-items: center;
-               padding: 1vw;
-           }
-           .navbar-container .logo h1{
-               font-size: 12px;
-               letter-spacing: 6px;
-               margin-top: 20px;
-               position: absolute;
-               top: 0;
-               left: 0;
-               z-index: 2;
-           }
-           .navbar-container .nav-links .fa-solid{
-               display: block;
-               font-size: 30px;
-               margin-top: 4vw;
-               position:absolute;
-               top:20px;
-               right: 25px;
-               
-             
-           }
-            .navbar-container ul{
-               background-color:#f7f7f7;
-               display: block;
-               padding-top: 16vw;
-               padding-left: 4vw;
-               position: fixed;
-               top: -300px;
-               gap: 10px;
-               height: 300px;
-               width: 100%;
-               transition: top 0.5s;
-               z-index: 1;
-           }
-           .navbar-container .nav-links li{
-               margin-top: 3vw;
-           }
-           .navbar-container ul .login_signup-btn{
-               margin-top: 1vw;
-           }
-           .navbar-container .fa-bars{
-               display: block;
-               position: absolute;
-               font-size: 30px;
-               top: 25px;
-               right: 25px;
-               
-               
-           }
+        .navbar-container{
+            width: 100%;
+            min-height: 80px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1vw;
+        }
+        .navbar-container .logo h1{
+            font-size: 12px;
+            letter-spacing: 6px;
+            margin-top: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        .navbar-container .nav-links .fa-solid{
+            display: block;
+            font-size: 30px;
+            margin-top: 4vw;
+            position:absolute;
+            top:6px;
+            right: 25px;
+            
+          
+        }
+         .navbar-container ul{
+            background-color:#f7f7f7;
+            display: block;
+            padding-top: 16vw;
+            padding-left: 4vw;
+            position: fixed;
+            top: -300px;
+            gap: 10px;
+            height: 300px;
+            width: 100%;
+            transition: top 0.5s;
+            z-index: 1;
+            box-shadow: 0px 2px 4px 0.8px;
+        }
+        .navbar-container .nav-links li{
+            margin-top: 25px;
+        }
+        .navbar-container ul .login_signup-btn{
+            margin-top: 1vw;
+        }
+        .navbar-container .nav-links .login_signup-btn .register-btn{
+         width: 100px;
+         padding: 10px;
+         border-radius: 12px;
+
+     }
+     .navbar-container .nav-links .login_signup-btn .register-btn{
+         width: 100px;
+         
+     }
+        .navbar-container .fa-bars{
+            display: block;
+            position: absolute;
+            font-size: 30px;
+            top: 25px;
+            right: 25px;
+            
+            
+        }
            /* --------------------------page1--------------------- */
            .page1{
                flex-direction: column;
                padding: 3vw;
-               /* margin-top: 50%; */
                margin-bottom: 0;
            }
            .page1 .left-col{
@@ -730,216 +532,9 @@ footer .part1{
             width: 100%;
             
            }
-           /* --------------------------Purpose and outlook---------------------------- */
-           .head-disc{
-               margin-top: 0;
-               margin-bottom: 0;
-               padding-left: 20px;
-               padding-right: 20px;
-               padding: 0;
-               min-height: 100vh;
-   
-           }
-           .head-disc h1{
-               font-size: 40px;
-               margin: 10px 5px;
-           }
-           .head-disc p{
-               padding: 10px;
-               margin: 10px 5px;
-           }
           
-           .head-disc-p2{
-               height: 100%;
-               padding: 2vw;
-           }
-           .head-disc-p2 .card{
-               height: 200px;
-               width: 300px;
-               margin: 0.4vw;
-           }
-           .head-disc-p2 .card img{
-               height: 80px;
-               width: 80px;
-           }
-           .head-disc-p2 .card p{
-               font-size: 14px;
-           }
-           /* ------------------------Communities---------------------- */
-           /* ----------------------------Page2--------------------------- */
-           .page2 h1{
-               font-size: 40px;
-               margin: 10px 5px;
-           }
-         
-           .community_card{
-               padding: 0.5vw;
-               margin: 0;
-           }
-           .card1{
-               height: 310px;
-               padding: 2vw;
-               padding-top: 5vw;
-           }
-           .card1 button{
-               padding: 4vw;
-               width: 200px;
-           }
-           .card1 h3{
-               font-size: 4vw;
-           }
-           .card1:hover{
-               scale: 1.2;
-               height: 280px;
-           }
-           .card2{
-               height: 290px;
-               padding: 2vw;
-               padding-top: 5vw;
-           }
-           .card2 button{
-               padding: 4vw;
-               width: 200px;
-           }
-           .card2 h3{
-               font-size: 4vw;
-               margin-top: 0;
-               
-           }
-           .card2 p{
-               text-align: center;
-              
-           }
-           .card2:hover{
-               scale: 1.2;
-               height: 280px;
-           }
-           .card3{
-               height: 310px;
-               padding: 2vw;
-               padding-top: 5vw;
-           }
-           .card3 button{
-               padding: 4vw;
-               width: 200px;
-           }
-           .card3 h3{
-               font-size: 4vw;
-           }
-           .card3 p{
-               text-align: center;
-           }
-           .card3:hover{
-               scale: 1.2;
-               height: 280px;
-           }
-           .card4{
-               height: 300px;
-               padding: 2vw;
-               padding-top: 5vw;
-           }
-           .card4 button{
-               padding: 4vw;
-               width: 200px;
-           }
-           .card4 h3{
-               font-size: 4vw;
-               margin-top: 0.5vw;
-               line-height: 17px;
-   
-           }
-           .card4 p{
-               margin-top: 0.8vw;
-               text-align: center;
-               font-size:15px ;
-           }
-           .card4:hover{
-               scale: 1.2;
-               height: 280px;
-           }
-           .card5{
-               height: 280px;
-               padding: 2vw;
-               padding-top: 5vw;
-           }
-           .card5 button{
-               padding: 4vw;
-               width: 200px;
-           }
-           .card5 h3{
-               font-size: 4vw;
-               margin-top: 0.5vw;
-               line-height: 17px;
-   
-           }
-           .card5 p{
-               margin-top: 0.8vw;
-               text-align: center;
-               font-size:15px ;
-           }
-           .card5:hover{
-               scale: 1.1;
-               height: 280px;
-           }
-           .card6{
-               height: 300px;
-               padding: 2vw;
-               padding-top: 5vw;
-           }
-           .card6 button{
-               padding: 4vw;
-               width: 200px;
-           }
-           .card6 h3{
-               font-size: 4vw;
-               margin-top: 0.5vw;
-               line-height: 17px;
-   
-           }
-           .card6 p{
-               margin-top: 0.8vw;
-               text-align: center;
-               font-size:15px ;
-           }
-           .card6:hover{
-               scale: 1.1;
-               height: 280px;
-           }
-           /* ------------------------------Join community-------------------- */
-           .join-community-container{
-               margin-top: 50px;
-           }
-           .join-community-container h2{
-               font-size: 25px;
-           }
-   
-           .join-community-container p{
-               font-size: 14px;
-           }
-           .join-community-container .join-btn{
-               padding: 2vw;
-               width: 200px;
-               margin-top: 50px;
-           }
-           /* ---------------------------About US------------------ */
-           .about_us{
-               margin: 0;
-           }
-           .about_us h2{
-               font-size: 40px;
-           }
-           .about_us p{
-               font-size: 14px;
-               margin:10px;
-           }
-           .about_us h4{
-               font-size: 18px;
-               margin-top: 50px;
-               margin-bottom: 50px;
-           }
-           .about_us button{
-               margin-top: 100px;
-           }
+  
+          
            /* -------------------footer------------------------- */
            footer{
               display: flex;
@@ -983,4 +578,3 @@ footer .part1{
            font-size: 20px;
        }
        }
-       
