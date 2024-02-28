@@ -38,7 +38,7 @@
 }
 .nav-links li a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     color: black;
 }
 /* -------login-signup-btn------------ */
@@ -52,7 +52,6 @@
 .login_signup-btn .signup-btn{
     padding: 1vw;
     background-color:black;
-    
     border: 1px solid black;
     border-radius: 12px;
 }
@@ -278,7 +277,6 @@ font-size: 15px;
 /* ----------------------After----------------- */
 .card1:hover{
     flex-basis: 32%;
-    box-shadow: 0.8vw 0.8vw 1.8vw;
     background-color: #4909716d ;
     height: 350px;
     border-radius: 12px;
@@ -335,7 +333,6 @@ font-size: 15px;
 /* --------------------------------After--------------------------- */
 .card2:hover{
     flex-basis: 32%;
-    box-shadow: 0.8vw 0.8vw 1.8vw;
     background-color: #4909716d ;
     height: 350px;
     border-radius: 12px;
@@ -387,7 +384,6 @@ font-size: 15px;
 /* ---------------After----------------- */
 .card3:hover{
     flex-basis: 32%;
-    box-shadow: 0.8vw 0.8vw 1.8vw;
     background-color: #4909716d ;
     height: 350px;
     border-radius: 12px;
@@ -439,7 +435,6 @@ font-size: 15px;
 /* ---------------After----------------- */
 .card4:hover{
     flex-basis: 32%;
-    box-shadow: 0.8vw 0.8vw 1.8vw;
     background-color: #4909716d ;
     height: 350px;
     border-radius: 12px;
@@ -490,7 +485,6 @@ font-size: 15px;
 /* ---------------After----------------- */
 .card5:hover{
     flex-basis: 32%;
-    box-shadow: 0.8vw 0.8vw 1.8vw;
     background-color: #4909716d ;
     height: 350px;
     border-radius: 12px;
@@ -541,7 +535,6 @@ font-size: 15px;
 /* ---------------After----------------- */
 .card6:hover{
     flex-basis: 32%;
-    box-shadow: 0.8vw 0.8vw 1.8vw;
     background-color: #4909716d ;
     height: 350px;
     border-radius: 12px;
@@ -743,7 +736,7 @@ footer .part1{
     gap: 50px;
  }
  .nav-links li a{
-    font-size: 20px;
+    font-size: 15px;
  }
  .login_signup-btn {
     display: block;
@@ -797,7 +790,7 @@ footer .part1{
     height: 300px;
 }
 .card1 h3{
-    margin-top: 0.8vw;
+    margin-top:8px;
     font-size: 2vw;
 }
 .card1:hover{
@@ -838,7 +831,7 @@ footer .part1{
     height: 300px;
 }
 .card5 h3{
-    margin-top: 0.8vw;
+    margin-top:8px;
     font-size: 2vw;
 }
 .card5:hover{
