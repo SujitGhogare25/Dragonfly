@@ -1,12 +1,38 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scrollbar-width: none;
 }
+/* -------------------------------------CSS CUSTOM PROPERTIES----------------------------------- */
+:root {
+    --font-color: linear-gradient(to right, purple, orange);
+    --footer-bg-color: rgba(128, 128, 128, 0.473);
+    --heading-size: 45px;
+    --bg-color: linear-gradient(to right, purple, orange);
+    --p-line-height: 25px;
+    --para-font-size: 15px;
+    --sub-head-size: 35px;
+  }
+  @font-face {
+    font-family: head;
+    src: url(../Assets/fonts/Dosis/Dosis-VariableFont_wght.ttf);  
+}
+@font-face {
+    font-family: sub-head;
+    src: url(../Assets/fonts/Galdeano/Galdeano-Regular.ttf);
+}
+@font-face {
+    font-family: para;
+    src: url(../Assets/fonts/Maitree/Maitree-Regular.ttf);
+}
+
 .container{
     min-height:100vh;
 }
+
 /* ----------Navbar-container---------- */
 .navbar-container{
     width: 100%;
@@ -26,6 +52,7 @@
     letter-spacing: 6px;
     font-weight: 200;
     margin-left: 20px;
+    
 }
 /* -------------navbar-links---------- */
  .navbar-container .nav-links{
@@ -116,11 +143,13 @@
     background: linear-gradient(to right, purple, orange);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family:head ;
    
 }
 .left-col p{
-   
+    font-family: para;
     font-size: 18px;
+    line-height: var(--p-line-height);
 }
 /* -------------buttons--------------- */
 .btn{
@@ -139,6 +168,7 @@
 text-decoration: none;
 color: white;
 font-size: 15px;
+font-family: para;
 }
 
 /* ----------------Right-Col----------------------- */
@@ -161,18 +191,23 @@ font-size: 15px;
 }
 .head-disc h1{
     margin: 1.5vw;
-    font-size: 40px ;
+    font-size: var(--heading-size) ;
+    font-family: head;
     background: linear-gradient(to right, purple, orange);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
+
 }
 .head-disc h3{
     margin: 10px;
-    font-size: 20px;
+    font-size:var(--sub-head-size);
+    font-family: sub-head;
 }
 .head-disc .a2{
-    font-size: 18px;
+    font-size: var(--para-font-size);
+    font-family: para;
+
 }
 .head-disc-p2{
     height: 600px;
@@ -202,6 +237,7 @@ font-size: 15px;
 .head-disc-p2 .card p{
     font-size: 20px;
     font-weight: 300;
+    font-family: sub-head;
     margin-top: 2vw;
 }
 
@@ -215,7 +251,8 @@ font-size: 15px;
     text-align: center;
 }
 .page2 h1{
-   font-size: 40PX;
+   font-size:var(--heading-size);
+   font-family: head;
    background: linear-gradient(to right, purple, orange);
    background-clip: text;
    margin-bottom: 0.8vw;
@@ -224,8 +261,42 @@ font-size: 15px;
 }
 .page2 .abt_communities{
     margin-top: 0.8vw;
-    font-size: 20PX;
+    font-size: var(--para-font-size);
+    font-family: para;
 } 
+/* --------------------------join community---------------- */
+.join-community-container{
+    height: 330px;
+    width: 100%;
+    text-align: center;
+    padding: 2vw;
+}
+.join-community-container h2{
+    font-size:var(--sub-head-size);
+    font-family: sub-head;
+    text-align: center;
+    margin: 12px;
+    background: linear-gradient(to right, purple, orange);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.join-community-container p{
+    font-size:var(--para-font-size);
+    font-family: para;
+    text-align: center;
+    margin: 10PX;
+}
+.join-community-container ul{
+    text-align: center;
+    list-style: none;
+  
+
+    
+}
+.join-community-container ul li{
+    font-size: var(--para-font-size);
+    font-family: sub-head;
+}
 /* ---------------Community cards---------------------- */
 .community_card{
     display: flex;
@@ -234,8 +305,7 @@ font-size: 15px;
      flex-wrap: wrap;
     padding: 1vw;
     position: relative;
-    margin-top: 2vw;
-}
+}   
 /* -------------------card1-------------- */
 /* ---------------------Before------------- */
 .card1{
@@ -253,14 +323,16 @@ font-size: 15px;
 }
 .card1 h3{
     margin-top: 1vw;
-    font-size: 2.5vw;
+    font-size: var(--sub-head-size);
+    font-family: sub-head;
 }
 .card1 p{
-    margin-top: 2vw;
-    font-size: 14px;
+    margin-top:5px;
+    font-size:var(--para-font-size);
+    font-family: para;
 }
 .card1 button{
-    margin-top: 3vw;
+    margin-top:8px;
     padding: 1vw;
     width: 180px;
     border-radius: 0.7vw;
@@ -270,14 +342,15 @@ font-size: 15px;
 }
 .card1 button a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
+    font-family: para;
     color:#f7f7f7;
     
 }
 /* ----------------------After----------------- */
 .card1:hover{
     flex-basis: 32%;
-    background-color: #4909716d ;
+    background-color: var(--footer-bg-color) ;
     height: 350px;
     border-radius: 12px;
     scale: 1.1;
@@ -306,16 +379,19 @@ font-size: 15px;
 }
 .card2 h3{
     margin-top: 1vw;
-    font-size: 2.5vw;
+    font-size:var(--sub-head-size);
+    font-family: sub-head;
     color: #000;
 }
 .card2 p{
-    margin-top: 2vw;
-    font-size: 14px;
+    margin-top:5px;
+    font-size:var(--para-font-size);
+    font-family: para;
+    line-height: var(--p-line-height);
     color: #000;
 }
 .card2 button{
-    margin-top: 3vw;
+    margin-top:8px;
     padding: 1vw;
     width: 180px;
     border-radius: 0.7vw;
@@ -325,7 +401,8 @@ font-size: 15px;
 }
 .card2 button a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
+    font-family: para;
     color:#f7f7f7;
     
 }
@@ -333,7 +410,7 @@ font-size: 15px;
 /* --------------------------------After--------------------------- */
 .card2:hover{
     flex-basis: 32%;
-    background-color: #4909716d ;
+    background-color:var(--footer-bg-color) ;
     height: 350px;
     border-radius: 12px;
     scale: 1.1;
@@ -360,14 +437,16 @@ font-size: 15px;
 }
 .card3 h3{
     margin-top: 1vw;
-    font-size: 3vw;
+    font-size:var(--sub-head-size);
+    font-family: sub-head;
 }
 .card3 p{
-    margin-top: 2vw;
-    font-size: 14px;
+    margin-top:5px;
+    font-size:var(--para-font-size);
+    font-family: para;
 }
 .card3 button{
-    margin-top: 3vw;
+    margin-top: 8px;
     padding: 1vw;
     width: 180px;
     border-radius: 0.7vw;
@@ -377,14 +456,15 @@ font-size: 15px;
 }
 .card3 button a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
+    font-family: para;
     color:#f7f7f7;
     
 }
 /* ---------------After----------------- */
 .card3:hover{
     flex-basis: 32%;
-    background-color: #4909716d ;
+    background-color:var(--footer-bg-color) ;
     height: 350px;
     border-radius: 12px;
     scale: 1.1;
@@ -410,12 +490,14 @@ font-size: 15px;
 }
 .card4 h3{
     margin-top: 1vw;
-    font-size: 2vw;
+    font-size:var(--sub-head-size);
+    font-family: sub-head;
     line-height: 25px;
 }
 .card4 p{
-    margin-top: 10px;
-    font-size: 14px;
+    margin-top:8px;
+    font-size:var(--para-font-size);
+    font-family: para;
 }
 .card4 button{
     margin-top: 1vw;
@@ -428,14 +510,15 @@ font-size: 15px;
 }
 .card4 button a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
+    font-family: para;
     color:#f7f7f7;
     
 }
 /* ---------------After----------------- */
 .card4:hover{
     flex-basis: 32%;
-    background-color: #4909716d ;
+    background-color:var(--footer-bg-color) ;
     height: 350px;
     border-radius: 12px;
     scale: 1.1;
@@ -461,14 +544,16 @@ font-size: 15px;
 }
 .card5 h3{
     margin-top: 1vw;
-    font-size: 3vw;
+    font-size: var(--sub-head-size);
+    font-family: sub-head;
 }
 .card5 p{
-    margin-top: 2vw;
-    font-size: 14px;
+    margin-top: 5px;
+    font-size: var(--para-font-size);
+    font-family: para;
 }
 .card5 button{
-    margin-top: 3vw;
+    margin-top: 8px;
     padding: 1vw;
     width: 180px;
     border-radius: 0.7vw;
@@ -478,14 +563,15 @@ font-size: 15px;
 }
 .card5 button a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
+    font-family: para;
     color:#f7f7f7;
     
 }
 /* ---------------After----------------- */
 .card5:hover{
     flex-basis: 32%;
-    background-color: #4909716d ;
+    background-color: var(--footer-bg-color) ;
     height: 350px;
     border-radius: 12px;
     scale: 1.1;
@@ -511,14 +597,16 @@ font-size: 15px;
 }
 .card6 h3{
     margin-top: 1vw;
-    font-size: 3vw;
+    font-size:var(--sub-head-size);
+    font-family: sub-head;
 }
 .card6 p{
     margin-top: 2vw;
-    font-size: 14px;
+    font-size: var(--para-font-size);
+    font-family: para;
 }
 .card6 button{
-    margin-top: 3vw;
+    margin-top: 8px;
     padding: 1vw;
     width: 180px;
     border-radius: 0.7vw;
@@ -528,14 +616,15 @@ font-size: 15px;
 }
 .card6 button a{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
+    font-family: para;
     color:#f7f7f7;
     
 }
 /* ---------------After----------------- */
 .card6:hover{
     flex-basis: 32%;
-    background-color: #4909716d ;
+    background-color: var(--footer-bg-color);
     height: 350px;
     border-radius: 12px;
     scale: 1.1;
@@ -544,34 +633,7 @@ font-size: 15px;
     z-index: 1;
     
 }
-/* --------------------------join community---------------- */
-.join-community-container{
-    height: 350px;
-    width: 100%;
-    text-align: center;
-    padding: 2vw;
-}
-.join-community-container h2{
-    font-size: 30px;
-    text-align: center;
-    margin: 12px;
-    background: linear-gradient(to right, purple, orange);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.join-community-container p{
-    font-size: 20px;
-    text-align: center;
-    margin: 10PX;
-}
-.join-community-container ul{
-    text-align: center;
-    list-style: none;
-    
-}
-.join-community-container ul li{
-    font-size: 18px;
-}
+
 
 /* ----------------page3-------------------- */
 
@@ -582,7 +644,8 @@ font-size: 15px;
 position: relative;
 }
 .about_us h2{
-    font-size: 40px;
+    font-size: var(--heading-size);
+    font-family: head;
     background: linear-gradient(to right, purple, orange);
     background-clip: text;
     margin-top: 20px;
@@ -590,11 +653,14 @@ position: relative;
     -webkit-text-fill-color: transparent;
 }
 .about_us h4{
-    font-size: 2.5vw;
-    margin-bottom: 2vw;
+    font-size:var(--sub-head-size);
+    font-family: sub-head;
+
+    margin-bottom: 20px;
 }
 .about_us p{
-    font-size: 2vw;
+    font-size:var(--para-font-size);
+    font-family: para;
 }
 .about_us button{
     margin-top: 15px;
@@ -607,6 +673,7 @@ position: relative;
 .about_us button a{
     text-decoration: none;
     font-size: 18px;
+    font-family: para;
     color: white;
 }
 .about_us button:hover{
@@ -637,6 +704,14 @@ footer .part1{
 .part1 .contact h4{
     font-size: 15px;
     margin-top: 1vw;
+}
+.part1 .contact h4 a{
+    text-decoration: none;
+    color: black;
+}
+.part1 .contact a{
+    text-decoration: none;
+    color: black;
 }
 .part1 .contact i{
     margin-top: 1vw;

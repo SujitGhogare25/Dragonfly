@@ -4,6 +4,29 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scrollbar-width: none;
+}
+/* -------------------------------------CSS CUSTOM PROPERTIES----------------------------------- */
+:root {
+    --font-color: linear-gradient(to right, purple, orange);
+    --footer-bg-color: rgba(128, 128, 128, 0.473);
+    --heading-size: 45px;
+    --bg-color: linear-gradient(to right, purple, orange);
+    --p-line-height: 25px;
+    --para-font-size: 15px;
+    --sub-head-size: 35px;
+  }
+  @font-face {
+    font-family: head;
+    src: url(../Assets/fonts/Dosis/Dosis-VariableFont_wght.ttf);  
+}
+@font-face {
+    font-family: sub-head;
+    src: url(../Assets/fonts/Galdeano/Galdeano-Regular.ttf);
+}
+@font-face {
+    font-family: para;
+    src: url(../Assets/fonts/Maitree/Maitree-Regular.ttf);
 }
 .container{
     min-height:100vh;
@@ -107,7 +130,8 @@
     padding: 0.8vw;
 }
 .left-col .hero-text {
-    font-size: 40px;
+    font-size: var(--heading-size);
+    font-family: head;
     margin-bottom: 35px;
     background: linear-gradient(to right, purple, orange);
     background-clip: text;
@@ -115,6 +139,8 @@
    
 }
 .left-col p{
+    font-size: var(--para-font-size);
+    font-family: para;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -130,7 +156,7 @@
     margin-bottom: 20px;
 }
 .btn .get_started-btn{
-    padding: 1vw;
+    padding: 15px;
     font-size: 16px;
     background: linear-gradient(to right, #AA3D71, #F1966E);
     border: none;
@@ -142,16 +168,9 @@
 text-decoration: none;
 color: white;
 font-size: 12px;
+font-family: para;
 }
-.btn .contact_us-btn{
-    padding: 1vw;
-    font-size: 14px;
 
-    border: 1px solid linear-gradient(to right,#AA3D71,#F1966E);
-    border-radius: 8px;
-    width: 180px;
-    cursor: pointer;
-}
 /* ----------------Right-Col----------------------- */
 .right-col{
     flex-basis: 40%;
@@ -175,11 +194,13 @@ font-size: 12px;
     gap: 10px;
 }
 .content p{
-    font-size: 25px;
+    font-size: var(--para-font-size);
+    font-family: para;
     background-color:#ffffff;
     box-shadow: 0px 2px 4px gray;
     padding: 10px;
     border-radius: 12px;
+    
 
 }
 
@@ -208,6 +229,14 @@ footer .part1{
 .part1 .contact h4{
     font-size: 15px;
     margin-top: 1vw;
+}
+.part1 .contact h4 a{
+    text-decoration: none;
+    color: black;
+}
+.part1 .contact a{
+    text-decoration: none;
+    color: black;
 }
 .part1 .contact i{
     margin-top: 1vw;
@@ -347,11 +376,9 @@ footer .part1{
        margin-top: 20px;
    }
    .btn .get_started-btn{
-       width: 100px;
+       width: 180px;
    }
-   .btn .contact_us-btn{
-       width: 100px;
-   }
+   
    /* -------------------Right-col--------------- */
    .right-col{
        flex-basis: 45%;

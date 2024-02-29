@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scrollbar-width: none;
 }
 html,body{
     height: 100%;
@@ -130,6 +131,14 @@ footer .part1{
 .part1 .contact h4{
     font-size: 15px;
     margin-top: 1vw;
+}
+.part1 .contact h4 a{
+    text-decoration: none;
+    color: black;
+}
+.part1 .contact a{
+    text-decoration: none;
+    color: black;
 }
 .part1 .contact i{
     margin-top: 1vw;

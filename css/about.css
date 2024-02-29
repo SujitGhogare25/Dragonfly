@@ -4,8 +4,30 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scrollbar-width: none;
 }
-
+/* -------------------------------------CSS CUSTOM PROPERTIES----------------------------------- */
+:root {
+    --font-color: linear-gradient(to right, purple, orange);
+    --footer-bg-color: rgba(128, 128, 128, 0.473);
+    --heading-size: 45px;
+    --bg-color: linear-gradient(to right, purple, orange);
+    --p-line-height: 25px;
+    --para-font-size: 15px;
+    --sub-head-size: 35px;
+  }
+  @font-face {
+    font-family: head;
+    src: url(../Assets/fonts/Dosis/Dosis-VariableFont_wght.ttf);  
+}
+@font-face {
+    font-family: sub-head;
+    src: url(../Assets/fonts/Galdeano/Galdeano-Regular.ttf);
+}
+@font-face {
+    font-family: para;
+    src: url(../Assets/fonts/Maitree/Maitree-Regular.ttf);
+}
 
 /* ----------Navbar-container---------- */
 .navbar-container{
@@ -126,8 +148,9 @@ flex-basis: 55%;
 
 }
 .abt_cont h2{
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: var(--heading-size);
+    font-family: head;
+    margin-bottom: 30px;
     background: linear-gradient(to right, purple, orange);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -135,7 +158,8 @@ flex-basis: 55%;
 }
 .abt_cont p{
     margin-top: 0.5vw;
-    font-size: 15px;
+    font-size:var(--para-font-size);
+    font-family: para;
 }
 /* ---------------------------Page2------------------------ */
 .page2{
@@ -146,18 +170,19 @@ flex-basis: 55%;
 }
 .page2 h1{
     text-align: center;
-    font-size: 40px;
+    font-size:var(--heading-size);
+    font-family: head;
     background: linear-gradient(to right, purple, orange);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 1vw;
 }
 .page2 img{
-    height: 500px;
+    height:100%;
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
-    margin-top: 2vw;
+    margin-top: 20px;
     
 }
 /* ---------------------page3--------------- */
@@ -165,12 +190,13 @@ flex-basis: 55%;
     min-height: 100vh;
     width: 100%;
     padding: 10PX;
-    margin-top: 20px;
+    margin-top: 10px;
     
 }
 .page3 h1{
     text-align: center;
-    font-size: 40px;
+    font-size: var(--heading-size);
+    font-family: head;
     margin: 1vw;
     background: linear-gradient(to right, purple, orange);
     background-clip: text;
@@ -189,7 +215,7 @@ flex-basis: 55%;
 }
 .p-card{
     text-align: center;
-    height: 180px;
+    height: 200px;
     padding: 1vw;
     flex-basis: 22%;
     border-radius: 12px;
@@ -202,8 +228,10 @@ flex-basis: 55%;
     transition: 0.5s ease-in-out;
 }
 
-.p-card i{
-    font-size: 60px;
+.p-card img{
+    height: 80px;
+    width: 80px;
+   border-radius: 12px;
     margin-bottom: 1vw;
 }
 .p-card h3{
@@ -274,6 +302,14 @@ footer .part1{
 .part1 .contact h4{
     font-size: 15px;
     margin-top: 1vw;
+}
+.part1 .contact h4 a{
+    text-decoration: none;
+    color: black;
+}
+.part1 .contact a{
+    text-decoration: none;
+    color: black;
 }
 .part1 .contact i{
     margin-top: 1vw;
@@ -662,10 +698,10 @@ footer .part1{
         font-size: 100px;
     }
     .p-card h3{
-        font-size: 30px;
+        font-size: 25px;
     }
     .p-card h4{
-        font-size: 25px;
+        font-size: 18px;
     }
 
        /* -------------------footer------------------------- */
