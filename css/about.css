@@ -561,7 +561,7 @@ footer .part1{
         display: block;
         
     }
-     .navbar-container ul{
+     .navbar-container .nav-links{
         background-color:#f7f7f7;
         text-align: start;
         padding-top: 16vw;
@@ -571,6 +571,7 @@ footer .part1{
         gap: 50px;
         height: 300px;
         width: 100%;
+        left: 0;
         transition: top 0.5s;
         z-index: 1;
         box-shadow: 0px 2px 4px 0.8px;
