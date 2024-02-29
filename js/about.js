@@ -12,7 +12,7 @@ function closemenu() {
 
 /*----------------------page1-------------------------- */
 function loadingAnimationPage1(){
-  gsap.from(".page1  .page1_cont  img",{
+  gsap.from(".page1  img",{
     x:-100,
     opacity:0,
     delay:0.4,
