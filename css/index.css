@@ -1279,7 +1279,7 @@ footer .part1{
             height: 280px;
         }
         .card2{
-            height: 290px;
+            height: 320px;
             padding: 2vw;
             padding-top: 5vw;
         }
@@ -1294,7 +1294,8 @@ footer .part1{
         }
         .card2 p{
             text-align: center;
-           
+            font-size: 13px;
+            
         }
         .card2:hover{
             scale: 1.2;

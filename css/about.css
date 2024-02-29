@@ -693,8 +693,10 @@ footer .part1{
         transform: translateY(-8px);
         background:linear-gradient(to right,purple,orange);
     }
-    .p-card i{
-        margin-top: 10px;
+    .p-card img{
+        margin-top: 40px;
+        height: 120px;
+        width: 120px;
         font-size: 100px;
     }
     .p-card h3{
