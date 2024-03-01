@@ -116,7 +116,7 @@
 }
 /* -------------------page1----------------- */
 .page1{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
    
     display: flex;
@@ -390,7 +390,7 @@ footer .part1{
        .navbar-container{
            width: 100%;
            padding: 1vw;
-           height: 130px;
+           height: 100px;
        }
        .navbar-container .logo h1{
            font-size: 16px;
@@ -402,7 +402,7 @@ footer .part1{
            gap: 20px;
        }
        .nav-links a{
-           font-size: 30px;
+           font-size: 25px;
        }
        .login_signup-btn .login-btn{
            width: 100px;
@@ -422,11 +422,12 @@ footer .part1{
        font-size: 25px;
       }
       .btn .get_started-btn{
-       width: 150px;
+       width: 300px;
+       padding: 20px;
       }
-      .btn .contact_us-btn{
-       width: 150px;
-      }
+     .content p{
+        font-size: 35px;
+     }
 
        /* --------------------Footer-------------- */
        footer{
