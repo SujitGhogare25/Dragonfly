@@ -140,7 +140,7 @@ html,body{
     align-items: center;
     position: relative;
     background-color: rgba(255, 255, 255, 0);
-    padding: 2vw;
+    padding: 10px;
     
 }
 .page1_cont img{
@@ -169,7 +169,7 @@ flex-basis: 55%;
 }
 /* ---------------------------Page2------------------------ */
 .page2{
-    height: 80vh;
+    min-height: 80vh;
     width: 100%;
     padding: 2vw;
     background-color:#ffffff;
@@ -404,7 +404,7 @@ footer .part1{
 }
 /* -----------------------------Media-------------------------------- */
 /* ------------------------For-tablets--------------------- */
-@media only screen and (min-width:600px){
+@media only screen and  (min-width:600px){
     .nav-links{
         display: flex;
         
@@ -419,25 +419,25 @@ footer .part1{
      }
      /* ------------------------page1--------------------------- */
      .page1{
-        min-height: 80vh;
         margin-top: 25px;
         padding-top: 25px;
      }
-     .page1_cont img{
-        height: 400px;
-        width: 400px;
+    
+    .page1  .page1_cont img{
+        height: 350px;
+        width: 350px;
      }
-     .abt_cont h2{
+    .page1 .abt_cont h2{
         font-size: 40px;
      }
-     .abt_cont p{
+    .page1 .abt_cont p{
         font-size: 15px;
         margin-top: 8px;
      }
      /* -----------------------------page2-------------------------- */
      
      .page2{
-        min-height: 100vh;
+        
         margin-top: 10px;
      }
      .page2 h1{
@@ -447,14 +447,11 @@ footer .part1{
         height: 400px;
 
      }
-     /* -----------------------------page3--------------------- */
-     .page3{
-        min-height: 100vh;
-        margin-top: 20px;
-     }
+    
    
 }
-    @media only screen and (min-width:1200px){
+
+    @media only screen and  (min-width:1200px){
         .navbar-container{
             width: 100%;
             padding: 1vw;
@@ -469,7 +466,7 @@ footer .part1{
         .nav-links{
             gap: 20px;
         }
-        .nav-links a{
+        .nav-links li a{
             font-size: 30px;
         }
         .login_signup-btn .login-btn{
@@ -479,19 +476,23 @@ footer .part1{
             width: 100px;
            }
            /* --------------------------------page1------------------------------- */
-           .page1_cont img{
-            height: 500px;
-            width: 500px;
+            .page1 .page1_cont img{
+                
+            height:400px;
+            width:400px;
            }
-           .abt_cont h2{
-            font-size: 40px;
+           .page1 .abt_cont{
+            flex-basis: 50%;
            }
-           .abt_cont p{
-            font-size: 23px;
+            .page1 .abt_cont h2{
+            font-size: 70px;
+           }
+          .page1  .abt_cont p{
+            font-size: 20px;
            }
            /* -----------------------------------Page2------------------------------- */
            .page2 h1{
-             font-size: 50px;   
+             font-size: 70px;   
            }
            .page2 img{
             height: 100%;

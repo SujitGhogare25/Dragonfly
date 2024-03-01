@@ -130,7 +130,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3vw;
+    padding: 20px;
 }
 /* --------------left-col---------------- */
 .page1 .left-col{
@@ -138,7 +138,7 @@
    
 }
 .left-col .hero-text {
-    font-size: 40px;
+    font-size: var(--heading-size);
     margin-bottom: 35px;
     background: linear-gradient(to right, purple, orange);
     background-clip: text;
@@ -210,9 +210,9 @@ font-family: para;
 
 }
 .head-disc-p2{
-    height: 600px;
+    height: 100vh;
     width: 100%;
-    padding: 4vw 7vw;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -247,7 +247,7 @@ font-family: para;
     min-height: 100vh;
     width: 100%;
     align-items: center;
-    padding: 2.2vw;
+    padding: 10px;
     text-align: center;
 }
 .page2 h1{
@@ -255,27 +255,27 @@ font-family: para;
    font-family: head;
    background: linear-gradient(to right, purple, orange);
    background-clip: text;
-   margin-bottom: 0.8vw;
+   margin-bottom: 10px;
    -webkit-text-fill-color: transparent;
    margin-bottom: 1vw;
 }
 .page2 .abt_communities{
-    margin-top: 0.8vw;
+    margin-top:10px;
     font-size: var(--para-font-size);
     font-family: para;
 } 
 /* --------------------------join community---------------- */
 .join-community-container{
-    height: 330px;
+    height: 300px;
     width: 100%;
     text-align: center;
-    padding: 2vw;
+    padding: 10px;
 }
 .join-community-container h2{
     font-size:var(--sub-head-size);
     font-family: sub-head;
     text-align: center;
-    margin: 12px;
+    margin: 10px;
     background: linear-gradient(to right, purple, orange);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -294,7 +294,7 @@ font-family: para;
     
 }
 .join-community-container ul li{
-    font-size: var(--para-font-size);
+    font-size: 20px;
     font-family: sub-head;
 }
 /* ---------------Community cards---------------------- */
@@ -426,7 +426,7 @@ font-family: para;
     flex-basis: 32%;
     margin: 1.2vw;
     background-color: #f7f7f7;
-    height: 400px;
+    height: 350px;
     border-radius: 12px;
     padding: 1vw;
 }
@@ -441,7 +441,7 @@ font-family: para;
     font-family: sub-head;
 }
 .card3 p{
-    margin-top:5px;
+    margin-top:8px;
     font-size:var(--para-font-size);
     font-family: para;
 }
@@ -479,9 +479,9 @@ font-family: para;
     flex-basis: 32%;
     margin: 1.2vw;
     background-color: #f7f7f7;
-    height: 400px;
+    height: 350px;
     border-radius: 12px;
-    padding: 1vw;
+    padding: 10px;
 }
 .card4 img{
     height: 100px;
@@ -492,7 +492,7 @@ font-family: para;
     margin-top: 1vw;
     font-size:var(--sub-head-size);
     font-family: sub-head;
-    line-height: 25px;
+    /* line-height: 25px; */
 }
 .card4 p{
     margin-top:8px;
@@ -534,8 +534,9 @@ font-family: para;
     margin: 1.2vw;
     background-color: #f7f7f7;
     height: 350px;
+ 
     border-radius: 12px;
-    padding: 1vw;
+    padding: 10px;
 }
 .card5 img{
     height: 100px;
@@ -548,7 +549,7 @@ font-family: para;
     font-family: sub-head;
 }
 .card5 p{
-    margin-top: 5px;
+    margin-top: 8px;
     font-size: var(--para-font-size);
     font-family: para;
 }
@@ -601,7 +602,7 @@ font-family: para;
     font-family: sub-head;
 }
 .card6 p{
-    margin-top: 2vw;
+    margin-top: 8px;
     font-size: var(--para-font-size);
     font-family: para;
 }
@@ -801,7 +802,7 @@ footer .part1{
 }
 /* -------------------------------Media------------ */
 /* ---------------------For-Tablet--------------------- */
-@media only screen and (min-width:600px){
+@media only screen and  (max-width:768px) and (min-width:600px) {
 
  .nav-links{
     display: flex;
@@ -818,30 +819,38 @@ footer .part1{
 /* --------------page1----------------- */
 .page1{
     display: flex;
-    margin-bottom: 0;
+   
+    margin:0;
+    padding: 10px;
+    height: 80vh;
 }
 .page1 .left-col{
     flex-basis: 60%;
+    position: relative;
 }
 .page1 .left-col .hero-text{
-    font: 20px;
+    font-size: 30px;
 }
-.left-col p{
-    margin-top: 15px;
-    margin-bottom: 15px;
+.page1 .left-col p{
+    font-size:12px;
+   
 }
+
+
 /* --------------Buttons-------------- */
 .btn{
     margin-top: 20px;
 }
 .btn .get_started-btn{
-    width: 300px;
+    width: 200px;
 }
 
 /* -------------------Right-col--------------- */
 .right-col{
     flex-basis: 45%;
+
 }
+
 
 /* ----------------purpose and outlook--------------- */
 .head-disc{
@@ -865,7 +874,7 @@ footer .part1{
 }
 .card1 h3{
     margin-top:8px;
-    font-size: 2vw;
+    font-size:18px;
 }
 .card1:hover{
     height: 300px;
@@ -874,8 +883,8 @@ footer .part1{
     height: 300px;
 }
 .card2 h3{
-    margin-top: 0.8vw;
-    font-size: 2vw;
+    margin-top: 8px;
+    font-size: 18px;
 }
 .card2:hover{
     height: 300px;
@@ -884,8 +893,8 @@ footer .part1{
     height: 300px;
 }
 .card3 h3{
-    margin-top: 0.8vw;
-    font-size: 2vw;
+    margin-top: 8px;
+    font-size:18px;
 }
 .card3:hover{
     height: 300px;
@@ -895,8 +904,8 @@ footer .part1{
 }
 
 .card4 h3{
-    margin-top: 0.8vw;
-    font-size: 2vw;
+    margin-top:8px;
+    font-size: 18px;
 }
 .card4:hover{
     height: 300px;
@@ -906,7 +915,7 @@ footer .part1{
 }
 .card5 h3{
     margin-top:8px;
-    font-size: 2vw;
+    font-size:18px;
 }
 .card5:hover{
     height: 300px;
@@ -915,8 +924,8 @@ footer .part1{
     height: 300px;
 }
 .card6 h3{
-    margin-top: 0.8vw;
-    font-size: 2vw;
+    margin-top:8px;
+    font-size: 18px;
 }
 .card6:hover{
     height: 300px;
@@ -927,17 +936,168 @@ footer .part1{
 }
 .about_us button{
     margin-top: 20px;
+    padding: 10px;
+    border-radius: 12px;
 }
 
 }
+@media screen and  (max-width:992px)  and (min-width:768px) {
+    .nav-links{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+     }
+     .nav-links li a{
+        font-size: 15px;
+     }
+     .login_signup-btn {
+        display: block;
+     }
+          /* --------------page1----------------- */
+.page1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+    margin:0;
+}
+.page1 .left-col{
+    flex-basis: 60%;
+    margin-top: 70px;
+}
+.page1 .left-col .hero-text{
+    font: 200px;
+}
+.left-col p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.page1 .right-col{
+    position: absolute;
+    right: 80px;
+    top: 20px;
+}
+.page1 .right-col img{
+    height: 200px;
+    width: 200px;
+}
+
+/* --------------Buttons-------------- */
+.btn{
+    margin-top: 20px;
+}
+.btn .get_started-btn{
+    width: 300px;
+}
+ .head-disc-p2 .card{
+ height: 200px;
+ width: 200px;
+ margin: 10px;
+ }
+/* ------------Community Cards--------- */
+.card1{
+    width: 100%;
+}
+.card1 h3{
+font-size: 27px;
+}
+.card2{
+    width: 100%;
+}
+.card2 h3{
+    font-size: 27px;
+}
+.card3 h3{
+    font-size: 27px;
+}
+.card4{
+    width: 100%;
+}
+.card4 h3{
+    font-size: 27px;
+}
+.card5 h3{
+    font-size: 27px;
+}
+.card6 h3{
+    font-size: 27px;
+}
+/* -------------about us--------- */
+.about_us h1{
+    font-size: var(--heading-size);
+}
+.about_us button{
+    border-radius: 15px;
+}
+}
+@media  only screen and  (min-width:992px) and (max-width:1200px){
+    .nav-links{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+     }
+     .nav-links li a{
+        font-size: 15px;
+     }
+     .login_signup-btn {
+        display: block;
+     }
+     /* --------------page1----------------- */
+.page1{
+    display: flex;
+    margin:0;
+}
+.page1 .left-col{
+    flex-basis: 60%;
+}
+.page1 .left-col .hero-text{
+    font-size: var(--heading-size);
+}
+.left-col p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+/* --------------Buttons-------------- */
+.btn{
+    margin-top: 20px;
+}
+.btn .get_started-btn{
+    width: 300px;
+}
+
+/* -------------------Right-col--------------- */
+.right-col{
+    flex-basis: 45%;
+}
+/* ----------------purpose and outlook--------------- */
+
+
+.head-disc p{
+    padding: 10px;
+}
+.head-disc h3{
+    margin: 1vw;
+}
+.head-disc-p2 .card{
+    height: 240px;
+}
+.about_us{
+    min-height: 80vh;
+}
+.about_us button{
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 12px;
+}
+}
 /* ------------------For 4K Screen----------------------- */
-@media only screen and (min-width:1200px){
+@media only screen and  (min-width:1200px) and (max-width:1440px){
     .navbar-container{
         width: 100%;
-        padding: 1vw;
-        height: 130px;
+        padding: 10px; 
+        height: 100px;
     }
-    .navbar-container .logo h1{
+    .navbar-container .logo h1{ 
         font-size: 16px;
         letter-spacing: 8px;
         font-weight: 300;
@@ -946,8 +1106,8 @@ footer .part1{
     .nav-links{
         gap: 20px;
     }
-    .nav-links a{
-        font-size: 30px;
+    .navbar-container .nav-links a{
+        font-size: 25px;
     }
     .login_signup-btn .login-btn{
         width: 100px;
@@ -957,27 +1117,33 @@ footer .part1{
        }
 
    /* /* ------------------------Page1------------------------ */
+   .page1{
+    margin-top: 0;
+   }
    .page1 .left-col{
     padding: 1vw;
    }
    .left-col .hero-text{
-    font-size: 50px;
+    font-size: 70px;
    }
    .left-col p{
-    font-size: 25px;
+    font-size: 30px;
+    line-height: 110%;
    }
    .btn .get_started-btn{
-    width: 300px;
+    width: 400px;
+    padding: 20px;
    }
   
    /* ---------------------------Purpose and outlook----------------------- */
     
     .head-disc h1{
         margin: 0;
-        font-size: 6vw;
+        font-size: 70px;
     }
-    .head-disc p{
-        font-size: 2vw;
+    .head-disc .a2{
+        font-size: 30px;
+        margin-top: 10px;
     }
     .head-disc h3{
         font-size: 3vw;
@@ -998,16 +1164,29 @@ footer .part1{
         font-size: 30px;
     }
     /* ------------------------------Communities Page------------------- */
-
+    .page2 h1{
+        font-size: 70px;
+    }
     .page2 .abt_communities{
-        font-size: 2vw;
+        font-size: 30px;
         margin-top: 1vw;
     }
     .card1{
         height: 450px;
     }
+    .card1 img{
+        height: 150px;
+        width: 150px;
+    }
+    .card1 h3{
+        font-size: 40px;
+    }
     .card1 p{
-        font-size: 1.5vw;
+        font-size:20px;
+    }
+    .card1 button{
+        padding: 15px;
+        margin-top: 20px;
     }
     .card1:hover{
         height: 450px;
@@ -1015,8 +1194,19 @@ footer .part1{
     .card2{
         height: 450px;
     }
+    .card2 img{
+        height: 150px;
+        width: 150px;
+    }
+    .card2 h3{
+  font-size: 40px;
+    }
     .card2 p{
-        font-size: 1.5vw;
+        font-size: 20px;
+    }
+    .card2 button{
+        padding: 15px;
+        margin-top: 20px;
     }
     .card2:hover{
         height: 450px;
@@ -1024,8 +1214,19 @@ footer .part1{
     .card3{
         height: 450px;
     }
+    .card3 img{
+        height: 150px;
+        width: 150px;
+    }
+    .card3 h3{
+        font-size: 40px;
+    }
     .card3 p{
-        font-size: 10px;
+        font-size: 20px;
+    }
+    .card3 button{
+        padding: 15px;
+        margin-top: 20px;
     }
     .card3:hover{
         height: 450px;
@@ -1033,8 +1234,20 @@ footer .part1{
     .card4{
         height: 450px;
     }
+    .card4 img{
+        height: 150px;
+        width: 150px;
+    }
+    .card4 h3{
+        font-size: 40px;
+    }
+
     .card4 p{
-        font-size: 10px;
+        font-size: 20px;
+    }
+    .card4 button{
+padding: 15px;
+margin-top: 10px;
     }
     .card4:hover{
         height: 450px;
@@ -1042,8 +1255,19 @@ footer .part1{
     .card5{
         height: 400px;
     }
+    .card5 img{
+        height: 150px;
+        width: 150px;
+    }
+    .card5 h3{
+        font-size: 40px;
+    }
     .card5 p{
-        font-size: 1.5vw;
+        font-size: 20px;
+    }
+    .card5 button{
+        padding: 15px;
+        margin-top: 7px;
     }
     .card5:hover{
         height: 400px;
@@ -1051,43 +1275,52 @@ footer .part1{
     .card6{
         height: 450px;
     }
+    .card6 img{
+        height: 150px;
+        width: 150px;
+    }
+    .card6 h3{
+        font-size: 40px;
+    }
     .card6 p{
-        font-size: 1.5vw;
+        font-size: 20px;
+    }
+    .card6 button{
+        padding: 15px;
+        margin-top: 20px;
     }
     .card6:hover{
         height: 450px;
     }
     /* ----------------------------Join Community----------------------- */
     .join-community-container{
-        height: 500px;
+        height: 400px;
         margin-bottom: 3vw;
     }
     .join-community-container h2{
-        font-size: 4vw;
+        font-size: 50px;
     }
     .join-community-container p{
-        font-size: 2vw;
+        font-size: 30px;
     }
     .join-community-container ul li{
-        font-size: 1.5vw;
+        font-size:35px;
     }
-    .join-community-container .join-btn{
-        padding: 1.5vw;
-        width: 160px;
-    }
-    .join-community-container .join-btn a{
-        font-size: 2vw;
-    }
+ 
     /* ------------------------About us------------------ */
     .about_us {
-        margin-bottom: 2vw;
+        margin-bottom: 30px;
+    }
+    .about_us p{
+        font-size: 30px;
     }
     .about_us button{
-        padding: 2vw;
+        padding: 20px;
+        border-radius: 15px;
 
     }
     .about_us button a{
-        font-size: 22px;
+        font-size: 25px;
     }
     /* --------------------Footer-------------- */
     footer{
