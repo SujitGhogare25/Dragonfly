@@ -125,7 +125,7 @@
 
 /* -------------------page1----------------- */
 .page1{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -184,7 +184,7 @@ font-family: para;
 }
 /* --------------------------------purpose and outlook----------------------- */
 .head-disc{
-     min-height: 100vh;
+     
      width: 100%;
      text-align: center;
     
@@ -210,7 +210,7 @@ font-family: para;
 
 }
 .head-disc-p2{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     padding: 10px 20px;
     display: flex;
@@ -822,7 +822,7 @@ footer .part1{
    
     margin:0;
     padding: 10px;
-    height: 80vh;
+    
 }
 .page1 .left-col{
     flex-basis: 60%;
@@ -846,10 +846,7 @@ footer .part1{
 }
 
 /* -------------------Right-col--------------- */
-.right-col{
-    flex-basis: 45%;
 
-}
 
 
 /* ----------------purpose and outlook--------------- */
