@@ -124,7 +124,6 @@ html,body{
 }
 /* --------------------Page1---------------------- */
 .page1{
-    /* min-height: 100vh; */
     width: 100%;
     background-color: #ffffff;
     position: relative;
@@ -133,7 +132,7 @@ html,body{
 
 
 .page1_cont{
-    height: 100%;
+    
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -162,14 +161,14 @@ flex-basis: 55%;
     -webkit-text-fill-color: transparent;
     text-align: center;
 }
-.abt_cont p{
+ .page1 .abt_cont p{
     margin-top: 0.5vw;
     font-size:var(--para-font-size);
     font-family: para;
 }
 /* ---------------------------Page2------------------------ */
 .page2{
-    /* min-height: 80vh; */
+   
     width: 100%;
     padding: 2vw;
     background-color:#ffffff;
