@@ -314,7 +314,7 @@ font-family: para;
     height: 350px;
     border-radius: 12px;
     margin: 1.2vw;
-   padding: 1vw;
+    padding: 1vw;
 }
 .card1 img{
     height: 100px;
@@ -322,7 +322,7 @@ font-family: para;
     border-radius: 12px;
 }
 .card1 h3{
-    margin-top: 1vw;
+    margin-top: 10px;
     font-size: var(--sub-head-size);
     font-family: sub-head;
 }
