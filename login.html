@@ -27,7 +27,9 @@
           <label for="email">Password</label>
           <i class="fa-solid fa-lock"></i>
         </div>
-        <input type="checkbox" onclick="myFunction()">Show Password <br><br>
+       
+        <input type="checkbox" onclick="myFunction()">Show Password &nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp;       <Label id="forgotpasslable">Forgot Password?</Label><br><br>
         <button type="submit" id="signup-btn">LogIn</button>
         
         <div class="signUp-link">
@@ -57,6 +59,7 @@
       import {
         getAuth,
         signInWithEmailAndPassword,
+        sendPasswordResetEmail
       } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
 
       const firebaseConfig = {
@@ -77,6 +80,7 @@
       let EmailInp = document.getElementById("emailInp");
       let PassInp = document.getElementById("passwordinp");
       let MainForm = document.getElementById("MainForm");
+      let ForgotPassLable = document.getElementById("forgotpasslable");
       let SignInUser = (event) => {
         event.preventDefault();
         signInWithEmailAndPassword(auth, EmailInp.value, PassInp.value)
@@ -88,7 +92,7 @@
                     "user-info",
                     JSON.stringify({
                       firstname: snapshot.val().firstname,
-                      lastname: snapshot.val().lastname,
+                      lastname: snapshot.val().lastname
                     })
                   );
                   sessionStorage.setItem(
@@ -106,7 +110,20 @@
             console.log(error.message);
           });
       };
+
+let ForgotPassword = () =>{
+  sendPasswordResetEmail(auth, EmailInp.value)
+  .then(()=>{
+    alert("Password Reset Link Has been sent to your Email")
+  })
+  .catch((error)=>{
+    console.log(error.code);
+    console.log(error.message);
+  })
+}
+
       MainForm.addEventListener("submit", SignInUser);
+      ForgotPassLable.addEventListener('click', ForgotPassword);
     </script>
    
   </body>

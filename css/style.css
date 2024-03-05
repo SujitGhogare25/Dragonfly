@@ -120,3 +120,8 @@ button {
 .signUp-link p a:hover {
   text-decoration: underline;
 }
+/* ------forget pass----- */
+#forgotpasslable{
+  text-decoration: underline;
+  cursor: pointer;
+}
