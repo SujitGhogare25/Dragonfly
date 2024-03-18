@@ -16,7 +16,18 @@
 
     <div class="form-wrapper sign-up">
       <form id="MainForm">
-        <h2>Log In</h2>
+        <h2>Sign Up</h2>
+
+        <div class="input-group">
+          <input type="text" id="fnameInp" required />
+          <label for="fname">First Name</label>
+          
+        </div>
+        <div class="input-group">
+          <input type="text" id="lnameInp" required />
+          <label for="lname">Last Name</label>
+         
+        </div>
         <div class="input-group">
           <input type="email" id="emailInp" required />
           <label for="email">Email</label>
@@ -27,15 +38,14 @@
           <label for="email">Password</label>
           <i class="fa-solid fa-lock"></i>
         </div>
-       
-        <input type="checkbox" onclick="myFunction()">Show Password &nbsp;&nbsp;&nbsp;
-        &nbsp; &nbsp;       <Label id="forgotpasslable">Forgot Password?</Label><br><br>
-        <button type="submit" id="signup-btn">LogIn</button>
         
+        <input type="checkbox" onclick="myFunction()">Show Password <br><br>
+
+        <button type="submit" id="signup-btn">Sign Up</button>
         <div class="signUp-link">
           <p>
             Already have an account?
-            <a href="signup.html" class="signInBtn-link">Sign Up</a>
+            <a href="login.html" class="signInBtn-link">Login</a>
           </p>
         </div>
       </form>
@@ -48,24 +58,24 @@
         x.type = "password";
       }
     }</script>
+
     <script type="module">
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
       import {
         getDatabase,
-        get,
+        set,
         ref,
-        child,
       } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
       import {
         getAuth,
-        signInWithEmailAndPassword,
-        sendPasswordResetEmail
+        createUserWithEmailAndPassword,
       } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
 
       const firebaseConfig = {
         apiKey: "AIzaSyDqexaW5YyzI8jrDzPpS829E6WQHbq8XYM",
         authDomain: "dragonflytechclub-e393e.firebaseapp.com",
-        databaseURL: "https://dragonflytechclub-e393e-default-rtdb.firebaseio.com",
+        databaseURL:
+          "https://dragonflytechclub-e393e-default-rtdb.firebaseio.com",
         projectId: "dragonflytechclub-e393e",
         storageBucket: "dragonflytechclub-e393e.appspot.com",
         messagingSenderId: "238610046387",
@@ -73,36 +83,31 @@
       };
 
       const app = initializeApp(firebaseConfig);
+
       const db = getDatabase();
       const auth = getAuth(app);
-      const dbref = ref(db);
 
       let EmailInp = document.getElementById("emailInp");
       let PassInp = document.getElementById("passwordinp");
+      let FnameInp = document.getElementById("fnameInp");
+
+      let LnameInp = document.getElementById("lnameInp");
       let MainForm = document.getElementById("MainForm");
-      let ForgotPassLable = document.getElementById("forgotpasslable");
-      let SignInUser = (event) => {
+      let signUpBtn = document.getElementById("signup-btn");
+
+      let RegisterUser = (event) => {
         event.preventDefault();
-        signInWithEmailAndPassword(auth, EmailInp.value, PassInp.value)
+        createUserWithEmailAndPassword(auth, EmailInp.value, PassInp.value)
           .then((credentials) => {
-            get(child(dbref, "UsersAuthList/" + credentials.user.uid)).then(
-              (snapshot) => {
-                if (snapshot.exists) {
-                  sessionStorage.setItem(
-                    "user-info",
-                    JSON.stringify({
-                      firstname: snapshot.val().firstname,
-                      lastname: snapshot.val().lastname
-                    })
-                  );
-                  sessionStorage.setItem(
-                    "user-creds",
-                    JSON.stringify(credentials.user)
-                  );
-                  window.location.href = "home.html";
-                }
-              }
-            );
+            set(ref(db, "UsersAuthList/" + credentials.user.uid), {
+              firstname: FnameInp.value,
+              lastname: LnameInp.value,
+            });
+            
+            signUpBtn.addEventListener('click' , () => {
+              window.location.href = "./login.html";
+            });
+            
           })
           .catch((error) => {
             alert(error.message);
@@ -110,21 +115,7 @@
             console.log(error.message);
           });
       };
-
-let ForgotPassword = () =>{
-  sendPasswordResetEmail(auth, EmailInp.value)
-  .then(()=>{
-    alert("Password Reset Link Has been sent to your Email")
-  })
-  .catch((error)=>{
-    console.log(error.code);
-    console.log(error.message);
-  })
-}
-
-      MainForm.addEventListener("submit", SignInUser);
-      ForgotPassLable.addEventListener('click', ForgotPassword);
+      MainForm.addEventListener("submit", RegisterUser);
     </script>
-   
   </body>
 </html>
