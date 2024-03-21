@@ -44,6 +44,12 @@
     
     
 }
+.navbar-container .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 /* ----------------nav-logo------------- */
 .navbar-container .logo h1{
     font-size: 12px;

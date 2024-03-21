@@ -54,6 +54,12 @@
     margin-left: 20px;
     
 }
+.navbar-container .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 /* -------------navbar-links---------- */
  .navbar-container .nav-links{
     display: flex;
@@ -63,6 +69,7 @@
     gap: 25px;
 
 }
+
 .nav-links li a{
     text-decoration: none;
     font-size: 15px;
@@ -1573,7 +1580,7 @@ margin-top: 10px;
             width: 200px;
         }
         .card2 h3{
-            font-size: 10px;
+            font-size: 17px;
             margin-top: 0;
             
         }

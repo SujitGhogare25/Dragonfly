@@ -45,6 +45,12 @@
     
     
 }
+.navbar-container .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 /* ----------------nav-logo------------- */
 .navbar-container .logo h1{
     font-size: 12px;
@@ -834,10 +840,13 @@ footer .part1{
     display: flex;
     
     align-items: center;
-    gap: 50px;
+    gap: 30px;
  }
  .nav-links li a{
     font-size: 15px;
+ }
+ .nav-links #username{
+    font-size: 8px;
  }
  .login_signup-btn {
     display: block;

@@ -53,6 +53,12 @@
     font-weight: 200;
     margin-left: 20px;
 }
+.navbar-container .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 /* -------------navbar-links---------- */
 .nav-links{
     display: flex;
