@@ -9,6 +9,42 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+    $(document).ready(function() {
+        $(".form").on('submit', function(e) {
+            e.preventDefault();
+            // var name = $(".fullName").val();
+            // var email = $(".email").val();
+            var name = $("input[name='fullName']").val();
+            var email = $("input[name='email']").val();
+            var phoneNo = $("input[name='phoneNo']").val();
+            var dob = $("input[name='dob']").val();
+            var gender = $("select[name='gender']").val();
+            var community = $("input[name='community']:checked").map(function() {
+                return this.value;
+            }).get().join(',');
+            var courses = $("select[name='courses']").val();
+            var screenshot = $("input[name='screenshot']").val();
+            
+            // Send the POST request
+            $.post("https://script.google.com/macros/s/AKfycbwATFLc5c6w3O5GSeWpH2VC1my3BzmYrPJlq5W_NxgQT8PbPB9zf1UvGiD5cInKO7vOWA/exec", {
+                fullName: name,
+                email: email,
+                phoneNo: phoneNo,
+                dob: dob,
+                gender: gender,
+                community: community,
+                courses: courses,
+                screenshot: screenshot
+            }, function() {
+                alert("Form submitted successfully!");
+            }).fail(function() {
+                alert("Failed to submit form. Please try again.");
+            });
+        });
+    });
+</script>
   </head>
   <body>
     <div class="container">
@@ -33,17 +69,105 @@
         </nav>
       </header>
       <!-- -----Registration Form------ -->
-      <div class="registration-form">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfvsw_SMYot9Baajd2-S5DQx4_dtdfjz7m2KiMKxv4aV2G_VQ/viewform?embedded=true"
-          width="640"
-          height="1010"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          >Loading…</iframe
-        >
-      </div>
+      <section class="container">
+        <header>Registration Form</header>
+        <form class="form" method="post" name="form">
+        <!-- Full Name -->
+            <div class="input-box"></div>
+                <label>Full Name:</label>
+                <input type="text" name="fullName" required>
+            </div>
+
+        <!-- Phone Number -->
+            <div class="input-box">
+                <label>Phone No:</label>
+                <input type="tel" pattern="[0-9]{10}" name="phoneNo" required>
+            </div>
+
+        <!-- Email -->
+        <!-- <div class="column"> -->
+            <div class="input-box">
+                <label>Email:</label>
+                <input type="email" name="email" required>
+            </div>
+
+        <!-- Password -->
+            <!-- <div class="input-box">
+                <label>Password:</label>
+                <input type="password" required>
+            </div> -->
+
+        <!-- Date of Birth -->
+            <div class="input-box">
+        <label>Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+            </div>
+
+        <!-- Gender -->
+            <div class="input-box">
+        <label>Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+            </div>
+
+        <!-- Communities of Interest -->
+            <div class="input-box">
+        <h3>Communities of Interest:</h3>
+        <div id="communities">
+            <label><input type="checkbox" name="community" value="web-development"> Web Development</label><br>
+            <label><input type="checkbox" name="community" value="app-development"> App Development</label><br>
+            <label><input type="checkbox" name="community" value="data-science"> Data Science</label><br>
+            <label><input type="checkbox" name="community" value="data-structures-algorithms"> Data Structures & Algorithms</label><br>
+            <label><input type="checkbox" name="community" value="artificial-intelligence-machine-learning"> Artificial Intelligence & Machine Learning</label><br>
+            <label><input type="checkbox" name="community" value="cyber-security-ethical-hacking"> Cyber Security & Ethical Hacking</label><br>
+            <label><input type="checkbox" name="community" value="game-development"> Game Development</label><br>
+            <label><input type="checkbox" name="community" value="graphic-designing"> Graphic Designing</label><br>
+            <label><input type="checkbox" name="community" value="others"> Others</label><br>
+            </div>
+
+        <!-- Courses -->
+            <div class="input-box">
+                <label>Select your Course:</label>
+                <select id="courses" name="courses">
+                    <option value="bca">BCA</option>
+                    <option value="btech">B-Tech</option>
+                    <option value="mca">MCA</option>
+                    <option value="m-tech">M-Tech</option>
+                    <option value="bsc-it">Bsc IT</option>
+                    <option value="bsc-cs">Bsc CS</option>
+                    <option value="msc">MSC</option>
+                    <option value="pharmacy">Pharmacy</option>
+                </select>
+            </div>
+
+        <!-- QR Code Image for Payment -->
+            <div class="input-box">
+        <div class="qr-code">
+            <label>QR Code for Payment:</label><br>
+            <img src="qr_code_image_url.jpeg" alt="QR Code for Payment" id="qrCode" style="width: 200px;">
+            <p>Scan the QR code to make the payment.</p>
+            </div>
+        </div>
+
+        <!-- File Upload -->
+            <div class="input-box">
+        <label>Upload Screenshot:</label>
+        <input type="file" accept="image/*" name="screenshot" required>
+            </div>
+
+
+        <!-- Submit Button -->
+            <div class="input-box">
+        <button type="submit" name="submit" value="submit">Register</button>
+            </div>
+            </div>
+    </form>
+    </section>
+</body>
       <footer>
         <hr />
         <div class="part1">
