@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -28,63 +29,120 @@
             <li id="active"><a href="./home.html">Home</a></li>
             <li><a href="./about.html">About us</a></li>
 
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-      </header>
-      <!-- -----Registration Form------ -->
-      <div class="registration-form">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfvsw_SMYot9Baajd2-S5DQx4_dtdfjz7m2KiMKxv4aV2G_VQ/viewform?embedded=true"
-          width="640"
-          height="1010"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          >Loading…</iframe
-        >
-      </div>
-      <footer>
-        <hr />
-        <div class="part1">
-          <div class="contact">
-            <h3>Contact</h3>
-            <h4><a href="#">Email:dargonflytechclub@gmail.com</a></h4>
-            <h4>Contact:+919226712049</h4>
-            <h4>Address:Chhatrapati Shivaji Maharaj University, Navi Mumbai</h4>
-            <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
-          </div>
-          <div class="quick_links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="./home.html">Home</a></li>
-              <li><a href="./about.html">About us</a></li>
-            </ul>
-          </div>
-          <div class="foot_communities">
-            <h3>Communities</h3>
-            <h4><a href="./languages.html">Programming Languages</a></h4>
-            <h4><a href="./ai-ml.html">AI & ML</a></h4>
-            <h4><a href="./data-sci.html">Data Science</a></h4>
-            <h4><a href="./app-dev.html">App Devlopment</a></h4>
-            <h4><a href="./web-dev.html">Web Devlopment</a></h4>
-            <h4><a href="./game-dev.html">Game Devlopment</a></h4>
-            <h4><a href="./cyber-sec.html">Cyber Security</a></h4>
-          </div>
-        </div>
-        <br /><br />
-        <hr />
-        <div class="part2">
-          <h3>2024 All Copyrights Reserved</h3>
-          <div class="social_media-icons">
-            <a href="http://www.linkedin.com/in/dragonfly-tech-club-7464982b7"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/techdragonfly?igsh=ZW02anYyeW1tOGZy&utm_source=qr"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://twitter.com/TechDragonfly"><i class="fa-brands fa-x-twitter"></i></a>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <script src="./js/register.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragonfly Registration Form</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+    <section class="container">
+        <header>Registration Form</header>
+        <form id="uploadForm" class="form" method="post" name="form" action="https://script.google.com/macros/s/AKfycbwa5vnADB9W2SmzxllZ19JlhCt3jl_Mai2p3PDThbbDcNN4aXcAfcwuOvvN-6O_5E2j/exec">
+            <input type="hidden" value="" name="fileContent" id="fileContent">
+            <input type="hidden" value="" name="filename" id="filename">
+            <!-- Full Name -->
+            <div class="input-box">
+                <label>Full Name:</label>
+                <input type="text" name="fullName" required>
+            </div>
+
+
+            <!-- Phone Number -->
+            <div class="input-box">
+                <label>Phone No:</label>
+                <input type="tel" pattern="[0-9]{10}" name="phoneNo" required>
+            </div>
+
+            <!-- Email -->
+            <div class="input-box">
+                <label>Email:</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="input-box">
+                <label>Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <!-- Gender -->
+            <div class="input-box">
+                <label>Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Communities of Interest -->
+            <div class="input-box">
+                <h3>Communities of Interest:</h3>
+                <div id="communities">
+                    <!-- Checkbox options -->
+                    <label><input type="checkbox" name="community" value="web-development"> Web Development</label><br>
+                    <label><input type="checkbox" name="community" value="app-development"> App Development</label><br>
+                    <label><input type="checkbox" name="community" value="data-science"> Data Science</label><br>
+                    <label><input type="checkbox" name="community" value="data-structures-algorithms"> Data Structures & Algorithms</label><br>
+                    <label><input type="checkbox" name="community" value="artificial-intelligence-machine-learning"> Artificial Intelligence & Machine Learning</label><br>
+                    <label><input type="checkbox" name="community" value="cyber-security-ethical-hacking"> Cyber Security & Ethical Hacking</label><br>
+                    <label><input type="checkbox" name="community" value="game-development"> Game Development</label><br>
+                    <label><input type="checkbox" name="community" value="graphic-designing"> Graphic Designing</label><br>
+                    <label><input type="checkbox" name="community" value="others"> Others</label><br>
+                </div>
+            </div>
+
+            <!-- Courses -->
+            <div class="input-box">
+                <label>Select your Course:</label>
+                <select id="courses" name="courses">
+                    <!-- Course options -->
+                    <option value="bca">BCA</option>
+                    <option value="btech">B-Tech</option>
+                    <option value="mca">MCA</option>
+                    <option value="m-tech">M-Tech</option>
+                    <option value="bsc-it">Bsc IT</option>
+                    <option value="bsc-cs">Bsc CS</option>
+                    <option value="msc">MSC</option>
+                    <option value="pharmacy">Pharmacy</option>
+                </select>
+            </div>
+
+            <!-- QR Code Image for Payment -->
+            <div class="input-box">
+                <div class="qr-code">
+                    <label>QR Code for Payment:</label><br>
+                    <img src="./Assets/qr_code_image_url.jpeg" alt="QR Code for Payment" id="qrCode" style="width: 200px;">
+                    <p>Scan the QR code to make the payment.</p>
+                </div>
+            </div>
+
+            <!-- File Upload -->
+            <div class="input-box">
+                <label for="attach">Upload Screenshot:</label>
+                <input type="file" id="attach" accept="image/*" name="attach" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="input-box">
+                <button type="button" onclick="UploadFile()">Register</button>
+            </div>
+
+        </form>
+    </section>
+    <script>
+        function UploadFile() {
+            var reader = new FileReader();
+            var file = document.getElementById('attach').files[0];
+            reader.onload = function() {
+                document.getElementById('fileContent').value = reader.result;
+                document.getElementById('filename').value = file.name;
+                document.getElementById('uploadForm').submit();
+            }
+            reader.readAsDataURL(file);
+        }
+    </script>
+</body>
 </html>
