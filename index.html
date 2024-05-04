@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./Assets/favicon-32x32.png">
     <title>Dragonfly|Tech Club</title>
@@ -13,39 +14,38 @@
     />
   </head>
   <body>
-   
+    <header>
+      <nav class="navbar-container">
+        <div class="logo">
+          <h1>DRAGONFLY <br />TECH CLUB</h1>
+          <img
+          src="./Assets/clg-logo.png"
+          height="60px"
+          width="280px"
+          alt=""
+        />
+        </div>
+    
+        <ul class="nav-links" id="sidemenu">
+          <li id="active"><a href="./home.html">Home</a></li>
+          <li><a href="./signup.html">About us</a></li>
+          <li>
+            <div class="login_signup-btn">
+              <button class="register-btn">
+                <a href="./login.html">login</a>
+              </button>
+            <a href="./signup.html">  <button type="button" class="signoutbtn" " id="signoutbtn">
+              Signup
+            </button></a>
+            </div>
+          </li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </header>
     <div class="container">
-      <header>
-        <nav class="navbar-container">
-          <div class="logo">
-            <h1>DRAGONFLY <br />TECH CLUB</h1>
-            <img
-            src="./Assets/COLLEGE-LOGO.jpg"
-            height="80px"
-            width="260px"
-            alt=""
-          />
-          </div>
-          <ul class="nav-links" id="sidemenu">
-            <li id="active"><a href="./home.html">Home</a></li>
-            <li><a href="./signup.html">About us</a></li>
-            <!-- <li id="userprofile"><i class="fa-regular fa-user"></i><h2 id="username"></h2></li> -->
-            <li>
-              <div class="login_signup-btn">
-                <button class="register-btn">
-                  <a href="./login.html">login</a>
-                </button>
-              <a href="./signup.html">  <button type="button" class="signoutbtn" " id="signoutbtn">
-                Signup
-              </button></a>
-              </div>
-            </li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-      </header>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIje_-xyONCINH_1WxSiyuz3b18fVngQXSC0HsrRRAcDRkrw/viewform?usp=sf_link"> <img src="./Assets/dtc event.png" alt="" height="250px" width="100%"></a>
+
       <!-- ------------------------Page1---------------------- -->
       <div class="page1">
         <div class="left-col">

@@ -595,6 +595,12 @@ footer .part1{
         left: 0;
         z-index: 2;
     }
+  .navbar-container .logo{
+    gap: 10px;
+  }
+    .navbar-container .logo img{
+      z-index: 2;
+    }
     .navbar-container .nav-links .fa-solid{
         display: block;
         font-size: 30px;

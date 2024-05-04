@@ -41,7 +41,9 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid grey; 
+    
+    
     
     
 }
@@ -158,12 +160,13 @@
 
 /* -------------------page1----------------- */
 .page1{
-    /* min-height: 100vh; */
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+   
 }
 /* --------------left-col---------------- */
 .page1 .left-col{
@@ -1401,7 +1404,7 @@ margin-top: 10px;
             padding: 1vw;
         }
         .navbar-container .logo h1{
-            font-size: 12px;
+            font-size: 10px;
             letter-spacing: 6px;
             margin-top: 20px;
             position: absolute;
@@ -1409,6 +1412,7 @@ margin-top: 10px;
             left: 0;
             z-index: 2;
         }
+       
         .navbar-container .nav-links .fa-solid{
             display: block;
             font-size: 30px;
